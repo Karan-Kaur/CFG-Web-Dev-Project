@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: black;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll; 
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  
+p {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+.greet{
+  padding-bottom: 1.5rem;
+}
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,0.2);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    width:100%;
+    align-items: center;
+    padding: 0px 15px;
+    justify-content: right;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+
+  .navlinks li {
+    padding: 0px 20px;
+  }
+  
+  .navlinks li a:hover {
+    color:black;
+    letter-spacing: 2px;
+  }
+  
+  section#about, #wellbeing, #worldviews, #journey {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+
+  section h1 {
+    font-size: 4rem;
+  }
+  
+  section#about {
+    /*background: url('https://images.pexels.com/photos/585759/pexels-photo-585759.jpeg?cs=srgb&dl=pexels-bruno-scramgnon-585759.jpg&fm=jpg') no-repeat center center/cover;;*/
+    background: url(images/sun.jpg)no-repeat center center/cover;;
+    color:black;
+  }
+  
+  section#wellbeing {
+    /*background: url('https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?cs=srgb&dl=pexels-martin-damboldt-814499.jpg&fm=jpg') no-repeat center center/cover;;*/
+    background: url(images/bridge.jpg)no-repeat center center/cover;;
+  }
+  
+  section#worldviews {
+    /*background: url('https://images.pexels.com/photos/3389955/pexels-photo-3389955.jpeg?cs=srgb&dl=pexels-%E7%86%8A%E5%A4%A7-%E6%97%85%E9%81%8A%E8%B6%A3-3389955.jpg&fm=jpg') no-repeat center center/cover;;*/
+    background: url(images/air-balloons.jpg)no-repeat center center/cover;;
+  }
+  
+  section#journey {
+    /*background: url('https://images.pexels.com/photos/9906084/pexels-photo-9906084.jpeg?cs=srgb&dl=pexels-roman-kirienko-9906084.jpg&fm=jpg') no-repeat center center/cover;;*/
+    background: url(images/mountain.jpg)no-repeat center center/cover;;
+  }
+  section#contact {
+    /*background: url('https://images.pexels.com/photos/217893/pexels-photo-217893.jpeg?cs=srgb&dl=pexels-anton-atanasov-217893.jpg&fm=jpg') no-repeat center center/cover;;*/
+    background: url(images/raindrop.jpg)no-repeat center center/cover;;
+  }
+
+section#contact {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+  
+  section#contact .contacting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+  }
+  
+  section#contact .links{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: 20vh;
+    align-items: flex-end;
+  }
+  
+     .social
+      {
+        z-index: 10;
+        display: flex;
+        align-items: flex-end;
+      }
+      .social li
+      {
+        list-style: none;
+      }
+      .social li a
+      {
+        display: inline-block;
+        filter: invert(100%);
+        margin-right: 60px;
+      }
+      .social li a:hover{
+          filter:none;
+      }
+
+      .button{
+        font-size: 1em;
+        background: white;
+        padding: 7px 30px;
+        text-decoration: none;
+        color: black;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    .button:hover{
+      letter-spacing: 4px;
+  }
+
+  .contact-form{
+    width: 60%;
+    min-width: 420px;
+    padding: 20px 30px;
+}
+
+form{
+    width: 100%;
+    position: relative;
+    margin: 10px auto 0 auto;
+}
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 60px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+textarea,
+input{
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid #c4cae0;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+textarea:focus,
+input:focus{
+    outline: none;
+}
+
+
+button{
+    border: none;
+    margin-top: 20px;
+    padding: 8px 15px;
+    color: black;
+  background: white;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+.button2{
+    display: flex;
+    justify-content: center;
+}
+
+button:hover{
+letter-spacing: 4px;
+}
+
+.title{
+margin-top: 8%;
+}
+
+      @media(max-width: 700px){
+        .row{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+        }
+
+        section h1 {
+            font-size: 2.5rem;
+          }
+        p{
+            font-size: 1rem;
+          }
+        
+        .navlinks li {
+            padding: 0px 5px;
+        }
+        .navlinks a{
+            font-size: 1em;
+          }
+
+        .navlinks li a:hover {
+            letter-spacing: 1px;
+          }
+        
+          .social li a
+          {
+            display: inline-block;
+            filter: invert(100%);
+            margin-right: 40px;
+          }
+
+        .title{
+            margin-top: 15%;
+        }
+
+        textarea,input{
+            font-size: 14px;
+        }
+    }
